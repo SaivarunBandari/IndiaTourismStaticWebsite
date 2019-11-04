@@ -1,0 +1,354 @@
+* {
+    /* Universal reset: */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer,
+article, section,
+hgroup, nav,
+figure {
+    /* Giving a display value to the HTML5 rendered elements: */
+    display: block;
+}
+
+body {
+    /* Setting the default text color, size, page background and a font stack: */
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.825em;
+    color: #fcfcfc;
+    background-color: #1F2833;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(../images/aircooled.png); */
+}
+
+hgroup {
+    margin-left: 17.5%;
+}
+
+#logo {
+    /* Styling for Logo*/
+    float: right;
+    height: 100px;
+    width: 150px;
+    text-align: right;
+    position: absolute;
+    top: 0%;
+    right: 17.5%;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+    color: #565656;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Headings: */
+
+h1, h2, h3 {
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    /* The logo text */
+    font-family: 'Californian FB', Times, serif;
+    font-size: 3.5em;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    /* The slogan text: */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.go_up {
+    float: right;
+    padding-right: 15px;
+}
+
+    .go_up:hover {
+        color: #416371;
+        float: right;
+        padding-right: 15px;
+    }
+
+p {
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+.line {
+    /* The dividing line: */
+    height: 1px;
+    background-color: #24404c;
+    border-bottom: 1px solid #416371;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+article .line {
+    /* The dividing line inside of the article is darker: */
+    background-color: #15242a;
+    border-bottom-color: #204656;
+    margin: 1.3em 0;
+}
+
+nav, article, nav ul li a, nav ul ul, aside, figure {
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Thumbnail navigation styling: */
+
+.nav_thumbnail {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #1A1A1D;
+    border-radius: 10px;
+    border: 3px solid #24404c;
+    overflow: hidden;
+    margin: 10px auto;
+    height: 100px;
+    width: 150px;
+}
+
+#left nav {
+    background: #f8f8f8;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    float: left;
+    padding: 0px;
+    color: #565656;
+    display: block;
+    border: 1px solid #FCFCFC;
+    -moz-box-shadow: 0 1px 1px #333333;
+    -webkit-box-shadow: 0 1px 1px #333333;
+    box-shadow: 1px 1px 1px #333333;
+}
+
+#right nav {
+    background: #f8f8f8;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    float: right;
+    padding: 0px;
+    color: #565656;
+    display: block;
+    border: 1px solid #FCFCFC;
+    -moz-box-shadow: 0 1px 1px #333333;
+    -webkit-box-shadow: 0 1px 1px #333333;
+    box-shadow: 1px 1px 1px #333333;
+    text-align: center;
+}
+
+aside nav ul li a {
+    display: block;
+    color: #565656;
+    width: 200px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    text-shadow: 0 1px 1px white;
+    text-transform: uppercase;
+}
+
+    aside nav ul li a:hover {
+        display: block;
+        background-color: #C2B9B0;
+        text-decoration: none;
+    }
+
+/* The navigation styling: */
+
+nav ul ul, nav {
+    background: #f8f8f8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: #565656;
+    position: relative;
+    border: 1px solid #FCFCFC;
+    -moz-box-shadow: 0 1px 1px #333333;
+    -webkit-box-shadow: 0 1px 1px #333333;
+    box-shadow: 1px 1px 1px #333333;
+}
+
+#horizontal_nav {
+    margin-left: 319px;
+    margin-right: 319px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav ul ul {
+    margin-top: 0px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+    nav ul ul ul {
+        margin-top: 37px;
+        margin-left: 0px;
+        display: none;
+        top: 0;
+        left: 100%;
+    }
+
+        nav ul ul ul ul {
+            margin-top: 38px;
+            margin-left: 0px;
+            display: none;
+            top: 0;
+            left: 100%;
+        }
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    color: #565656;
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 1px white;
+    text-transform: uppercase;
+}
+
+    nav ul li a:hover {
+        display: block;
+        background-color: #C2B9B0;
+        text-decoration: none;
+    }
+
+nav > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Article styles: */
+
+#page {
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article {
+    background-color: #1A1A1D;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#articles {
+    float: left;
+    width: 60%;
+    margin: 0 37px;
+    padding: 20px;
+}
+
+figure {
+    border: 3px solid #142830;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 700px;
+    -moz-box-shadow: 0 0 2px #4D7788;
+    -webkit-box-shadow: 0 0 2px #4D7788;
+    box-shadow: 3px 3px 5px #4D7788;
+}
+
+    figure:hover {
+        -moz-box-shadow: 0 0 5px #4D7788;
+        -webkit-box-shadow: 0 0 5px #4D7788;
+        box-shadow: 5px 5px 5px #4D7788;
+    }
+
+/* Footer styling: */
+
+footer {
+    clear: both;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.825em;
+}
+
+
+    footer p {
+        margin-bottom: -2.5em;
+        position: relative;
+    }
+
+    footer a, footer a:visited {
+        color: #cccccc;
+        background-color: #213e4a;
+        display: block;
+        padding: 2px 4px;
+        z-index: 100;
+        position: relative;
+    }
+
+        footer a:hover {
+            text-decoration: none;
+            background-color: #142830;
+        }
+
+        footer a.by {
+            float: left;
+        }
+
+        footer a.up {
+            float: right;
+        }
